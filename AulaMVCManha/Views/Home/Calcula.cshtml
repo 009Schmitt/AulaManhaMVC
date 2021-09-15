@@ -1,4 +1,5 @@
-﻿
+﻿@*@model AulaMVCManha.Models.Pessoa;*@
+
 @{
     ViewData["Title"] = "Calcula";
 }
@@ -8,17 +9,43 @@
 @*<a></a> @*Negrito*@
 @*@<br /> @*Quebra de linha*@
 @*@<div></div> @*Cria uma DIVison*@
-@*<button></button> @*Cria um botao*@ 
+@*<button></button> @*Cria um botao*@
 @*<p> entre </p>*@
 
+@*<p> Texto a ser mostrado </p>
+    <div>
+        <p>@Model.Nome</p>
+        <p>@Model.Idade</p>
+        <p>@Model.Cpf</p>
+    </div>
+    <br />*@
+
+<h3>VALORES</h3>
 <div>
+    <p> @ViewBag.Nome </p>
+    <p> @ViewBag.Idade </p>
+    <p> @ViewBag.Cpf </p>
+    <br />
     <p><a href="~/Home">Volta pro começo</a></p>
     <br />
     <p><a href="https://Google.com"> Vai pro google </a></p>
     <br />
     <button type="button" onclick="alert('4')"><a>2+2?</a></button>
+    <button type="button" onclick=""> Texto a ser mostrado </button>
     <br />
     <p> @DateTime.Now </p>
 </div>
 
+<form action="~/Home/AuthCadastro" method="post">
+    <fieldset>
+        <label>Numero Da Conta</label>
+        <input type="text" name="numeroConta" />
+        <br />
+        <label>Saldo da Conta</label>
+        <input type="text" name="saldo" />
+        <br />
+        <label>Enviar</label>
+        <input type="submit" value="Enviar" />
+    </fieldset>
+</form>
 

@@ -36,7 +36,36 @@ namespace AulaMVCManha.Controllers
 
         public IActionResult Calcula()
         {
-            return View();
+            ViewBag.Nome = "Jorge";
+            ViewBag.Idade = 35;
+            ViewBag.Cpf = "12545512378";
+
+            Pessoa pes = new Pessoa
+            {
+                Nome = "Luiz Gustavo",
+                Idade = 29,
+                Cpf = "12385278963"
+            };
+
+            return View(pes);
+        }
+
+        [HttpPost]
+        public IActionResult AuthCadastro(string numeroConta, string saldo)
+        {
+            // Ações do BD
+            if (!string.IsNullOrEmpty(numeroConta) &&
+               !string.IsNullOrEmpty(saldo))
+            {
+                DBFunctions.InsereConta(numeroConta, saldo);
+                return RedirectToAction("Index", "Home");
+            }
+            else
+            {
+                return RedirectToAction("Calcula", "Home");    
+            }
+
+
         }
 
     }

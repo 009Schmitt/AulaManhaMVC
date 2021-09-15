@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\victor.schmitt\\source\\repos\\AulaMVCManha\\AulaMVCManha.csproj": {}
+    "C:\\Users\\victor.schmitt\\Documents\\GitHub\\AulaManhaMVC\\AulaMVCManha\\AulaMVCManha.csproj": {}
   },
   "projects": {
-    "C:\\Users\\victor.schmitt\\source\\repos\\AulaMVCManha\\AulaMVCManha.csproj": {
+    "C:\\Users\\victor.schmitt\\Documents\\GitHub\\AulaManhaMVC\\AulaMVCManha\\AulaMVCManha.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\victor.schmitt\\source\\repos\\AulaMVCManha\\AulaMVCManha.csproj",
+        "projectUniqueName": "C:\\Users\\victor.schmitt\\Documents\\GitHub\\AulaManhaMVC\\AulaMVCManha\\AulaMVCManha.csproj",
         "projectName": "AulaMVCManha",
-        "projectPath": "C:\\Users\\victor.schmitt\\source\\repos\\AulaMVCManha\\AulaMVCManha.csproj",
+        "projectPath": "C:\\Users\\victor.schmitt\\Documents\\GitHub\\AulaManhaMVC\\AulaMVCManha\\AulaMVCManha.csproj",
         "packagesPath": "C:\\Users\\victor.schmitt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\victor.schmitt\\source\\repos\\AulaMVCManha\\obj\\",
+        "outputPath": "C:\\Users\\victor.schmitt\\Documents\\GitHub\\AulaManhaMVC\\AulaMVCManha\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -47,6 +47,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.3, )"
             }
           },
           "imports": [
